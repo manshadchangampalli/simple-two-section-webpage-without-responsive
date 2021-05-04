@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="variable.css">
     <link rel="stylesheet" href="style.css">
     <title>GALVANIZE</title>
   </head>
@@ -15,7 +16,7 @@
       <nav>
         <a href="">Home</a>
         <a href="">About</a>
-        <a href="">contact</a>
+        <a class="last" href="">contact</a>
       </nav>
     </div>
     </header>
@@ -37,15 +38,16 @@
             <h4>Please Fill The Form</h4>
             <form action="">
               <div class="input-group">
-                <input type="text" id="name" />
+                <input type="text" id="name" required />
                 <label for="name">Name</label>
               </div>
               <div class="input-group">
-                <input type="email" id="email" />
+                <!-- the required key only work in form  -->
+                <input type="email" id="email" required /> 
                 <label for="email">Email</label>
               </div>
               <div class="input-group">
-                <input type="password" id="password" />
+                <input type="password" id="password" required />
                 <label for="password">Password</label>
               </div>
               <div class="submit-section">
@@ -55,6 +57,29 @@
           </div>
         </div>
       </section>
+      <section class="section-two">
+        <div class="card-container">
+          <div class="image-container">
+            <img src="./image/img1.jpg" alt="">
+          </div>
+          <h1>IMAGE 1</h1>
+        </div>
+        <div class="card-container">
+          <div class="image-container">
+            <img src="./image/img3.jpg" alt="">
+          </div>
+          <h1>IMAGE 2</h1>
+        </div>
+        <div class="card-container">
+          <div class="image-container">
+            <img src="./image/img2.jpg" alt="">
+          </div>
+          <h1>IMAGE 3</h1>
+        </div>
+      </section>
     </main>
+    <footer>
+      Designed and Developed by <span> Manshad</span>
+    </footer>
   </body>
 </html>

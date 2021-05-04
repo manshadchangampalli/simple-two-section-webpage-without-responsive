@@ -18,11 +18,14 @@ header {
   position: absolute;
   top: 0;
 }
+.last{
+  margin-right: 140px;
+}
 
 header a {
   text-decoration: none;
   margin-right: 100px;
-  font-size: 14px;
+  font-size: var(--font-size-14);
   letter-spacing: 1px;
   font-family: Tahoma;
   color: rgba(255, 255, 255, 0.719);
@@ -30,65 +33,184 @@ header a {
 header .container {
   display: flex;
   justify-content: space-between;
+  margin-left: 40px;
+  
 }
 
-/* home */
+/*left section of  home page */
 .banner-container {
   color: white;
   width: 100%;
   height: 100vh;
   background-image: url("image/pexels-oleg-magni-1040499.jpg");
+  
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
+  align-items: center;
 }
 
 .left-section {
   width: 50%;
+  align-self: flex-start;
+  margin-left: 50pxr;
 }
 .left-section h1 {
   margin: 0;
   font-size: 40px;
   letter-spacing: 1px;
-  
 }
 .banner-container .container {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 .left-section p {
   margin: 0;
   margin-top: 20px;
-  font-size: 14px;
+  font-size: var(--font-size-14);
   letter-spacing: 1px;
   color: rgba(255, 255, 255, 0.819);
   line-height: 28px;
 }
 .left-section button {
-  color: rgb(0, 0, 0);
+  color: var(--black);
   box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.09);
   font-weight: bold;
-  background-image: linear-gradient(
-    to right,
-    #999999,
-    #ababab,
-    #bebebe,
-    #d1d1d1,
-    #e5e5e5,
-    #e5e5e5,
-    #e5e5e5,
-    #e5e5e5,
-    #d1d1d1,
-    #bebebe,
-    #ababab,
-    #999999
-  );
+  background-color: white;
   border: none;
   padding: 12px 50px;
   border-radius: 6px;
   margin-top: 15px;
   cursor: pointer;
+}
+/* left-section end */
+
+/* right section of the home page */
+
+.right-section {
+  width: 40%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 40px 0 ;
+  box-shadow: 0 5px 6px rgb(0, 0, 0, 0.219);
+}
+.right-section h4 {
+  font-size: 20px;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 30px;
+  color: rgb(136, 136, 136);
+}
+.input-group {
+  width: 300px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.input-group label {
+  color: rgb(165, 165, 165);
+  font-size: var(--font-size-14);
+  position: absolute;
+  top: 10px;
+  transition: 0.5s ease-in-out;
+}
+.input-group input {
+  border: none;
+  padding: 7px;
+  margin-top: 5px;
+  outline: none;
+  border-bottom: 1px solid #c9c9c98a;
+}
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  color: var(--black);
+  top: -10px;
+  font-size: 12px;
+}
+.input-group input:focus,
+.input-group input:valid {
+  border-color: var(--black);
+}
+.submit-section{
+  text-align: center;
+}
+.submit-button {
+  background-image: linear-gradient(
+    to right top,
+    #000000,
+    #111010,
+    #1b191a,
+    #252323,
+    #302c2c,
+    #302c2c,
+    #302c2c,
+    #302c2c,
+    #252323,
+    #1b191a,
+    #111010,
+    #000000
+  );
+  color: white;
+  padding: 10px 0px;
+  margin-top: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 300px;
+  
+}
+/* right-section end */
+
+/* second section start */
+
+.section-two{
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+  align-items: center;
+}
+.card-container{
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 10px 5px 26px rgba(0, 0, 0, 0.219);
+  overflow: hidden;
+  text-align: center;
+}
+.card-container h1{
+  color: rgb(136,136,136);
+}
+
+.image-container{
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+.image-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5 ease-in-out;
+}
+.image-container img:hover{
+  transform: scale(1.1) rotate(-5deg);
+
+}
+/* section two end */
+/* footer start */
+
+
+
+footer{
+  text-align: center;
+  color: gray;
+  padding: 15px;
+
+}
+footer span{
+  color: var(--black);
 }
