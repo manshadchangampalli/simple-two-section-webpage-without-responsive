@@ -1,0 +1,42 @@
+/* basic styling */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    background-color: rgba(23,23,23,0.15);
+    padding: 20px;
+    position: absolute;
+    top: 0;
+}
+
+header a{
+    text-decoration: none;
+    margin-right: 100px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: Tahoma;
+    color: rgba(255,255,255,0.719);
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+
+
+/* home */
+.banner-container{
+    margin-top: 100px;
+}
