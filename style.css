@@ -1,42 +1,94 @@
 /* basic styling */
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* header */
 
-header{
-    width: 100%;
-    background-color: rgba(23,23,23,0.15);
-    padding: 20px;
-    position: absolute;
-    top: 0;
+header {
+  width: 100%;
+  background-color: rgba(23, 23, 23, 0.15);
+  padding: 20px;
+  position: absolute;
+  top: 0;
 }
 
-header a{
-    text-decoration: none;
-    margin-right: 100px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    font-family: Tahoma;
-    color: rgba(255,255,255,0.719);
+header a {
+  text-decoration: none;
+  margin-right: 100px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: Tahoma;
+  color: rgba(255, 255, 255, 0.719);
 }
-header .container{
-    display: flex;
-    justify-content: space-between;
-    
-    
+header .container {
+  display: flex;
+  justify-content: space-between;
 }
-
-
 
 /* home */
-.banner-container{
-    margin-top: 100px;
+.banner-container {
+  color: white;
+  width: 100%;
+  height: 100vh;
+  background-image: url("image/pexels-oleg-magni-1040499.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+}
+
+.left-section {
+  width: 50%;
+}
+.left-section h1 {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: 1px;
+  
+}
+.banner-container .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.left-section p {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.819);
+  line-height: 28px;
+}
+.left-section button {
+  color: rgb(0, 0, 0);
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.09);
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    #999999,
+    #ababab,
+    #bebebe,
+    #d1d1d1,
+    #e5e5e5,
+    #e5e5e5,
+    #e5e5e5,
+    #e5e5e5,
+    #d1d1d1,
+    #bebebe,
+    #ababab,
+    #999999
+  );
+  border: none;
+  padding: 12px 50px;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
 }
